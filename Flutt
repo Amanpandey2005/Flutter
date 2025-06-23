@@ -1,3 +1,11 @@
+title: Text("Flutter Doctor"),
+      ),
+body:Center(
+        child: Container(
+            width: 500,
+            height: 500,
+           child:  Image.asset('assets/images/Flutter.jpeg')),
+     )
 body: OutlinedButton(
     child: Text("Outlined Button"),
         onPressed:(){
