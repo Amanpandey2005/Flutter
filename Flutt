@@ -1,0 +1,31 @@
+body: OutlinedButton(
+    child: Text("Outlined Button"),
+        onPressed:(){
+        print("Outlined clicked");
+      },
+      )
+      body:ElevatedButton(
+        child:Text("Elevated Button"),
+        onPressed:(){
+          print("Button Pressed");
+        },
+      )
+      body: Center(
+        child: Container(
+          width: 100,
+          height: 100,
+          color: Colors.green,
+          child: Text("Hello Moto"),
+      body: Text("Hello Mr. Devops",style: TextStyle(fontSize: 25,
+        color: Colors.lime,
+        fontWeight: FontWeight.bold,
+        backgroundColor: Colors.blueAccent
+        
+       body: TextButton(onPressed:(){
+        print("Text button Tapped!!");
+ },
+          onLongPress: (){
+         print("LongPressed");
+           },
+          child:
+       Text("Click here")),
