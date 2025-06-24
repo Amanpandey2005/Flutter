@@ -55,3 +55,40 @@ body:Container(
           }, child: Text("Click"))
          ],
       )
+
+body: Container(
+        height: 400,
+        width: 400,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children:<Widget> [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children:<Widget> [
+                Column(
+                  children: [
+                    ElevatedButton(onPressed: (){}, child: Text("Click"))
+                  ],
+                ),
+              Text('A' , style:TextStyle(fontSize: 25),),
+              Text('B' , style: TextStyle(fontSize: 25),),
+              Text('C' , style:TextStyle(fontSize: 25),),
+              Text('D' , style:TextStyle(fontSize: 25),),
+              Text('E' , style:TextStyle(fontSize: 25),),
+              Text('F' , style:TextStyle(fontSize: 25),),
+              ElevatedButton(onPressed: (){
+              }, child: Text("Click"))
+              ],
+            ),
+            Text('A', style: TextStyle(fontSize: 25),),
+            Text('B', style: TextStyle(fontSize: 25),),
+            Text('C', style: TextStyle(fontSize: 25),),
+            Text('D', style: TextStyle(fontSize: 25),),
+            Text('E', style: TextStyle(fontSize: 25),),
+            Text('F', style: TextStyle(fontSize: 25),),
+            Text('G', style: TextStyle(fontSize: 25),),
+            ElevatedButton(onPressed: (){}, child: Text("Click here"))
+          ],
+        ),
+      )
