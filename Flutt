@@ -92,3 +92,35 @@ body: Container(
           ],
         ),
       )
+
+body:Center(
+      child: InkWell(
+        onTap: (){
+          print("Its tapped");
+        },
+          onDoubleTap: (){
+          print("Its Double Tapped");
+          },
+          onLongPress: (){
+          print("Its Longpressed");
+          },
+          child: Container(
+            width: 500,
+            height: 500,
+            color: Colors.greenAccent,
+            child: Center(
+              child:InkWell(
+                onLongPress: (){
+                  print("Double pressed");
+                },
+                  onTap: (){
+                  print("Its tapped");
+                  },
+                  child: Text("Just Check here for me ",style: TextStyle(fontSize: 22,fontWeight: FontWeight.w600)))
+              )
+          )
+      ),
+      )
+    );
+  }
+}
