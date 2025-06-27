@@ -27,6 +27,45 @@ body: OutlinedButton(
       body: Text("Hello Mr. Devops",style: TextStyle(fontSize: 25,
         color: Colors.lime,
         fontWeight: FontWeight.bold,
+
+
+// for Listview builder
+ var arrnames = ["Aman Pandey " , "Vertika Saxena " , "IIT Delhi" , "Shubham Tyagi" , "Govind Kumar Giri"];
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Flutter Doctor"),
+    ),
+      body: ListView.builder(itemBuilder: (context,index){
+        return Text(arrnames[index], style: TextStyle(fontSize: 20, fontWeight: FontWeight.w900));
+    },
+    itemCount : arrnames.length,
+        itemExtent: 700,
+        //scrollDirection: Axis.horizontal,
+      )
+    );
+  }
+}
+
+// for listview divider
+ var arrnames = ["Aman Pandey " , " Aadarsh Suryan" , "IIT Delhi" , "Shubham Tyagi" , "Govind Kumar Giri"];
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Flutter Doctor"),
+    ),
+      body: ListView.separated(itemBuilder: (context,index){
+        return Text(arrnames[index], style: TextStyle(fontSize: 20, fontWeight: FontWeight.w900));
+    },
+    itemCount : arrnames.length,
+        separatorBuilder: (BuildContext context, int index) {
+        return Divider(height: 100, thickness: 3,);
+        },
+
+        //scrollDirection: Axis.horizontal,
+      )
+    );
+  }
+}
+
         backgroundColor: Colors.blueAccent
         
        body: TextButton(onPressed:(){
