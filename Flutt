@@ -294,3 +294,37 @@ body: Center(
         ],
     ),
 
+
+
+class _FlutterAppState extends State<FlutterApp> {
+  var arrnames = ["Aman Pandey" , "Aadarsh Suryan" , "Abhishek Singh", "Priyanshi Abhishek Singh"];
+  @override
+  Widget build(BuildContext context) {
+
+    // TODO: implement build
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+
+       home:  Scaffold(
+        appBar: AppBar(
+          title: Text('Flutter App'),
+        ),
+        body: ListView.separated(itemBuilder: (context,index){
+    return ListTile(
+    leading:Text('${index+1}'),
+    title :Text(arrnames[index]),
+    subtitle: Text("Numbers"),
+    trailing: Icon(Icons.add),
+            );
+      },
+    itemCount: arrnames.length,
+    separatorBuilder: (context,index){
+    return Divider(height: 20, thickness: 2);
+    },
+    ),
+    ),
+        );
+  }
+}
+
+
