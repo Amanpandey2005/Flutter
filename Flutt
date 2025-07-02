@@ -328,3 +328,84 @@ class _FlutterAppState extends State<FlutterApp> {
 }
 
 
+
+import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+
+void main(){
+  runApp(FlutterApp());
+}
+
+class FlutterApp extends StatefulWidget {
+  @override
+  State<FlutterApp> createState() => _FlutterAppState();
+}
+
+class _FlutterAppState extends State<FlutterApp> {
+  var arrnames = ["Aman Pandey" , "Aadarsh Suryan" , "Abhishek Singh", "Priyanshi Abhishek Singh"];
+  @override
+  Widget build(BuildContext context) {
+
+    // TODO: implement build
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+
+       home:  Scaffold(
+        appBar: AppBar(
+          title: Text('Flutter App'),
+        ),
+         body: Padding(
+           padding: EdgeInsets.all(10),
+           child: Column(
+             children: [
+               Container(
+                 width: 100,
+                 height: 100,
+                 child: CircleAvatar(
+                   backgroundImage: AssetImage("assets/images/Ghibli.webp"),
+                   backgroundColor: Colors.blueAccent,
+                 ),
+               ),
+               SizedBox(height: 20), // Space between containers
+               Container(
+                 width: 100,
+                 height: 100,
+                 child: CircleAvatar(
+                   backgroundImage: AssetImage("assets/images/Ghibli.webp"),
+                   backgroundColor: Colors.yellow,
+                 ),
+               ),
+               SizedBox(height: 20),
+               Container(
+                 width: 100,
+                 height: 100,
+                 child: CircleAvatar(
+                   backgroundImage: AssetImage("assets/images/Ghibli.webp"),
+                   backgroundColor: Colors.black54,
+                 ),
+               ),
+               SizedBox(height: 20),
+               Container(
+                 width: 100,
+                 height: 100,
+                 child: CircleAvatar(
+                   backgroundImage: AssetImage("assets/images/Ghibli.webp"),
+                   backgroundColor: Colors.lightGreenAccent,
+                 ),
+               ),
+               SizedBox(height: 20),
+               Container(
+                 width: 100,
+                 height: 100,
+                 child: CircleAvatar(
+                   backgroundImage: AssetImage("assets/images/Ghibli.webp"),
+                   backgroundColor: Colors.blueAccent,
+                 ),
+               ),
+             ],
+           ),
+         ),
+       ),
+    );
+  }
+
