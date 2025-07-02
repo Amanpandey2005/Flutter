@@ -262,5 +262,35 @@ body: Center(
         ),
 
 
+ body: Row(
+          children:[
+           Expanded( flex: 2,
+       child:Container(width: 100,
+            height: 150,
+            color: Colors.orange,
+          ),
+       ),
+            Expanded( flex: 2,
+              child:Container(width: 100,
+                height: 150,
+                color: Colors.blue,
+              ),
 
+            ),
+            Expanded( flex: 2,
+              child:Container(width: 100,
+                height: 150,
+                color: Colors.grey,
+              ),
+
+            ),
+            Expanded( flex: 2,
+              child:Container(width: 100,
+                height: 150,
+                color: Colors.indigoAccent,
+              ),
+
+            ),
+        ],
+    ),
 
